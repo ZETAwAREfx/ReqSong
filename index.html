@@ -3,24 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pide una canción</title>
+    <title>Pedidos al DJ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Pide tu canción al DJ</h1>
+        <h1>Pide tu canción</h1>
         <form id="song-request-form">
-            <div class="form-group">
-                <label for="name">Tu nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="song">Canción y artista:</label>
-                <input type="text" id="song" name="song" required>
-            </div>
-            <button type="submit">Enviar solicitud</button>
+            <div id="requests-container"></div>
+            <button type="button" id="submit-button">Enviar</button>
         </form>
-        <div id="message-container"></div>
     </div>
     <script src="script.js"></script>
 </body>
